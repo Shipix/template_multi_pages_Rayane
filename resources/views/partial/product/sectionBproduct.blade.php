@@ -9,10 +9,10 @@
             </h2>
           </div>
         </div>
-        <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src="img/products-02.jpg" alt="">
+        <img class="product-item-img mx-auto d-flex rounded img-fluid mb-3 mb-lg-0" src={{$productCont[1]->imgB}} alt="">
         <div class="product-item-description d-flex ml-auto">
           <div class="bg-faded p-5 rounded">
-            <p class="mb-0">Our seasonal menu features delicious snacks, baked goods, and even full meals perfect for breakfast or lunchtime. We source our ingredients from local, oragnic farms whenever possible, alongside premium vendors for specialty goods.</p>
+            <p class="mb-0">{{$productCont[1]->paraB}}</p>
           </div>
         </div>
       </div>

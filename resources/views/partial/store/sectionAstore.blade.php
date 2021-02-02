@@ -7,36 +7,14 @@
               <span class="section-heading-upper">Come On In</span>
               <span class="section-heading-lower">We're Open</span>
             </h2>
-            <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
-              <li class="list-unstyled-item list-hours-item d-flex">
-                Sunday
-                <span class="ml-auto">Closed</span>
-              </li>
-              <li class="list-unstyled-item list-hours-item d-flex">
-                Monday
-                <span class="ml-auto">7:00 AM to 8:00 PM</span>
-              </li>
-              <li class="list-unstyled-item list-hours-item d-flex">
-                Tuesday
-                <span class="ml-auto">7:00 AM to 8:00 PM</span>
-              </li>
-              <li class="list-unstyled-item list-hours-item d-flex">
-                Wednesday
-                <span class="ml-auto">7:00 AM to 8:00 PM</span>
-              </li>
-              <li class="list-unstyled-item list-hours-item d-flex">
-                Thursday
-                <span class="ml-auto">7:00 AM to 8:00 PM</span>
-              </li>
-              <li class="list-unstyled-item list-hours-item d-flex">
-                Friday
-                <span class="ml-auto">7:00 AM to 8:00 PM</span>
-              </li>
-              <li class="list-unstyled-item list-hours-item d-flex">
-                Saturday
-                <span class="ml-auto">9:00 AM to 5:00 PM</span>
-              </li>
-            </ul>
+              @foreach ($storeCont as $item)
+              <ul class="list-unstyled list-hours mb-5 text-left mx-auto">
+                <li class="list-unstyled-item list-hours-item d-flex">
+                  {{$item->jour}}
+                  <span class="ml-auto">{{$item->heure}}</span>
+                </li>
+              </ul>
+              @endforeach
             <p class="address mb-5">
               <em>
                 <strong>1116 Orchard Street</strong>
